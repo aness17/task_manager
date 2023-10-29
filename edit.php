@@ -11,8 +11,8 @@
                 </div>
             </div>
             <?php
-            $id = $_GET['id'];
-            $sql = "SELECT * FROM tasks where id='$id'";
+            $id = $_GET['id']; //mengambil data id
+            $sql = "SELECT * FROM tasks where id='$id'";  // membuat query untuk mengambil data dengan kondisi id
             $query = mysqli_query($db, $sql);
             $tasks = mysqli_fetch_array($query);
 

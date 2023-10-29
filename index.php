@@ -27,8 +27,9 @@
                     <tbody>
                         <?php
                         $i = 1;
-                        $query = mysqli_query($db, "SELECT id,title,status FROM tasks");
-                        while ($tasks = mysqli_fetch_array($query)) {
+                        $sql = "SELECT id,title,status FROM tasks"; // membuat query untuk mengambil seluruh data
+                        $query = mysqli_query($db, $sql); // eksekusi query
+                        while ($tasks = mysqli_fetch_array($query)) { //perulangan sebanyak jumlah data yang diambil
                             $i++;
                         ?>
                             <tr>

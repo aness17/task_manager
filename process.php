@@ -2,18 +2,20 @@
 include("config.php");
 
 if (isset($_POST['submit'])) { //cek apakah tombol submit sudah diklik
+    //mengambil data dari form
     $title = $_POST['title'];
     $desc = $_POST['desc'];
     $status = $_POST['status'];
 
+    //membuat query insert ke dalam tabel
     $sql = "INSERT INTO tasks (title, description,status) VALUES ('$title','$desc','$status')";
-    $query = mysqli_query($db, $sql);
+    $query = mysqli_query($db, $sql); //eksekusi query dengan koneksi database
 
-    if ($query) {
-        header("Location: index.php");
+    if ($query) { //apakah query insert berhasil ?
+        header("Location: index.php"); //jika berhasil akan dialihkan ke halaman index.php
     } else {
-        header("Location: add.php");
+        header("Location: add.php"); //jika gagal akan dialihkan ke halaman add.php
     }
-} else {
-    header("Location: add.php");
+} else { // jika tombol submit tidak diklik
+    header("Location: add.php"); //akan dialihkan ke halaman add.php
 }
