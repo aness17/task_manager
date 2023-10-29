@@ -18,8 +18,7 @@
 
                     <div class="col-12">
                         <label for="desc" class="form-label"><span class="text-danger">*</span>Description</label>
-                        <input type="text" name="desc" class="form-control" id="desc">
-
+                        <textarea name="desc" class="form-control" id="desc"></textarea>
                     </div>
                     <div class="col-12">
                         <label for="status" class="form-label"><span class="text-danger">*</span>Status</label>

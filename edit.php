@@ -27,7 +27,7 @@
 
                     <div class="col-12">
                         <label for="desc" class="form-label"><span class="text-danger">*</span>Description</label>
-                        <input type="text" name="desc" class="form-control" id="desc" value="<?= $tasks['description'] ?>">
+                        <textarea name="desc" class="form-control" id="desc"><?= $tasks['description'] ?></textarea>
 
                     </div>
                     <div class="col-12">
