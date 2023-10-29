@@ -4,16 +4,17 @@ Aplikasi Task Manager berbasis website.
 
 ## Aplikasi ini dibuat dengan:
 
-SB-Admin
-Bootstrap4
-Mysql Maria DB
-Php 7.4.20
+1. Apache HTTP Server
+2. Php 7.4.20
+2. Mysql Maria DB
+3. Bootstrap4
+4. SB-Admin
 
 ## Installation
 
 1. Clone repositori ini
-2. Buat database dengan nama `tasks`
-3. Import file tasks.sql
+2. Buat database dengan nama `task_manager`
+3. Import file `task_manager.sql`
 4. Taruh project ini di dalam folder `htdocs`
 5. Setting koneksi pada file `config.php` dan ganti username, password dan dbname nya
 
