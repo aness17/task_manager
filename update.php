@@ -2,10 +2,10 @@
 include("config.php");
 
 //mengambil data dari form
-$id = mysqli_real_escape_string($db, $_POST['id']);
-$title = mysqli_real_escape_string($db, $_POST['title']);
-$desc = mysqli_real_escape_string($db, $_POST['desc']);
-$status = mysqli_real_escape_string($db, $_POST['status']);
+$id = mysqli_real_escape_string($db, htmlentities($_POST['id']));
+$title = mysqli_real_escape_string($db, htmlentities($_POST['title']));
+$desc = mysqli_real_escape_string($db, htmlentities($_POST['desc']));
+$status = mysqli_real_escape_string($db, htmlentities($_POST['status']));
 
 if (!empty($title) && !empty($desc) && !empty($status)) { //apakah title, desc dan status memiliki nilai
     //jika seluruh kondisi bernilai true maka query sql akan di eksekusi

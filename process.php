@@ -3,9 +3,9 @@ include("config.php");
 
 if (isset($_POST['submit'])) { //cek apakah tombol submit sudah diklik
     //mengambil data dari form
-    $title = mysqli_real_escape_string($db, $_POST['title']);
-    $desc = mysqli_real_escape_string($db, $_POST['desc']);
-    $status = mysqli_real_escape_string($db, $_POST['status']);
+    $title = mysqli_real_escape_string($db, htmlentities($_POST['title']));
+    $desc = mysqli_real_escape_string($db, htmlentities($_POST['desc']));
+    $status = mysqli_real_escape_string($db, htmlentities($_POST['status']));
 
     //membuat query insert ke dalam tabel
     $sql = "INSERT INTO tasks (title, description,status) VALUES ('$title','$desc','$status')";
