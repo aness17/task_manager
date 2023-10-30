@@ -33,9 +33,9 @@
                             $i++;
                         ?>
                             <tr>
-                                <td><?= $tasks['title'] ?></td>
-                                <td><?= $tasks['status'] ?></td>
-                                <td><a href="edit.php?id=<?= $tasks['id'] ?>">Edit</a></td>
+                                <td><?= htmlentities($tasks['title']) ?></td>
+                                <td><?= htmlentities($tasks['status']) ?></td>
+                                <td><a href="edit.php?id=<?= htmlentities($tasks['id']) ?>">Edit</a></td>
                             </tr>
                         <?php } ?>
                     </tbody>
