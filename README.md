@@ -4,9 +4,9 @@ Aplikasi Task Manager berbasis website.
 
 ## Aplikasi ini dibuat dengan:
 
-1. Apache HTTP Server
+1. Apache HTTP Server 2.4.48
 2. Php 7.4.20
-2. Mysql Maria DB
+2. Mysql DB 10.4.19-MariaDB
 3. Bootstrap4
 4. SB-Admin
 
